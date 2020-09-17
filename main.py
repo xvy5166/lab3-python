@@ -8,8 +8,8 @@
 
 def sum_n(n):
   count = 0
-  if n<= 1:
-    return 1
+  if n == 0:
+    return 0
   else :
     return n+sum_n(n-1)
 
@@ -23,7 +23,7 @@ def print_n(s,n):
 
 def run():
   number = sum_n(int(input("Enter an int: ")))
-  print(f"sum is {number}")
+  print(f"sum is {number}.")
   string = input("Enter a string: ")
   print_n(string, number)
 
